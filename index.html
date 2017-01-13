@@ -68,8 +68,10 @@
     },
 
     submitHandler: function (form, values, ajax) {
+      console.log('Values:', values);
+
       ajax({
-        url: 'http://localhost:7777/submit',
+        url: '/submit',
         method: 'POST',
         data: values,
         async: true,
